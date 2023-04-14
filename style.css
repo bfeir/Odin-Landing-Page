@@ -8,11 +8,9 @@ a:link, a:visited, a:hover, a:active{
     color: unset;
 }
 
-ul {
-    list-style-type: none;
+h1, p {
     margin: 0;
-    padding: 0;
-  }
+}
 
 .hero,
 .footer,
@@ -21,11 +19,12 @@ ul {
     color: #e5e7eb;
 }
 
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 30px;
 }
 
 .header .logo {
@@ -40,18 +39,92 @@ ul {
 
 .hero{
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 60px;
 }
+
 .hero-left{
     flex-wrap: wrap;
 }
 
+.hero-button {
+    border: none;
+    border-radius: 8px;
+    background: #3882F6;
+    color: white;
+    padding: 8px 24px;
+    margin-top: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 800px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.information {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.information-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.image img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
 
 .quote {
     background-color: #e5e7eb;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+    padding-bottom: 12px;
+}
+
+.author {
+    text-align: end;
+    font-weight: bold;
+    color: #1f2937;
+    font-size: 24px;
+}
+
+.CTA {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .links {
-font-size: 18px;
+    font-size: 18px;
+}
+
+.hero,
+.footer,
+.header,
+.information,
+.quote,
+.CTA {
+    padding-left: 150px;
+    padding-right: 150px;
 }
